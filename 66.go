@@ -14,7 +14,9 @@ func bar() {
 }
 
 func main() {
-	p, err := foo() // p 重新定义
+	//p, err := foo() // p 重新定义
+	var err error
+	p,err = foo()
 	if err != nil {
 		fmt.Println(err)
 		return

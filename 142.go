@@ -10,5 +10,5 @@ func main() {
 	var s []int // nil
 	_ = s[:]
 	//
-	s, s[0] = []int{1, 2}, 9
+	s, s[0] = []int{1, 2}, 9// panic s[0] 中s 为nil
 }

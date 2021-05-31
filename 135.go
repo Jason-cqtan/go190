@@ -8,6 +8,6 @@ func main() {
 
 	fmt.Println(len(s))
 
-	s2 := s[4:8]
+	s2 := s[4:9]
 	fmt.Println(len(s2))
 }

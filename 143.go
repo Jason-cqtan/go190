@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type T struct{}
 
 func (*T) foo() {
@@ -17,5 +15,5 @@ func main() {
 	s := S{} // main.S{T:(*main.T)(nil)}
 	_ = s.foo
 	s.foo()
-	_ = s.bar
+	_ = s.bar// 空指针解析 panic
 }

@@ -15,6 +15,6 @@ func main() {
 		r[i] = v
 	}
 
-	fmt.Println("r=", r)
-	fmt.Println("a=", a)
+	fmt.Println("r=", r)//[1,2,3,4,5]
+	fmt.Println("a=", a)// [1,12,12,4,5]
 }

@@ -20,6 +20,7 @@ func main() {
 	p := &a
 	p1 := &p
 
+	// 不能使用多级指针调用方法
 	p1.value()
 	p1.pointer()
 

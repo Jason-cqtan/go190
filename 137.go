@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 func main() {
 	var x interface{}
 
@@ -7,5 +9,6 @@ func main() {
 
 	_ = x == x
 	_ = x == y
-	_ = y == y // panic 两个比较值的动态类型为同一个不可比较类型。
+	fmt.Printf("%T", x)
+	//_ = y == y // panic 两个比较值的动态类型为同一个不可比较类型。
 }

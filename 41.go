@@ -2,10 +2,11 @@ package main
 
 import "fmt"
 
+// 代码中 A B 两处应该怎么修改才能顺利编译?
 func main() {
-	//var m map[string]int
+	//var m map[string]int // A
 	//m["a"] = 1
-	//if v := m["a"]; v != nil {
+	//if v := m["a"]; v != nil { // B
 	//	fmt.Println(v)
 	//}
 

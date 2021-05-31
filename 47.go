@@ -16,16 +16,16 @@ func main() {
 	person := &Person{28}
 
 	// 1
-	defer fmt.Println(person.age)
+	defer fmt.Println(person.age,3)
 
 	// 2
 	defer func(p *Person) {
-		fmt.Println(p.age)
+		fmt.Println(p.age,2)
 	}(person)
 
 	// 3
 	defer func() {
-		fmt.Println(person.age)
+		fmt.Println(person.age,1)
 	}()
 
 	person.age = 29

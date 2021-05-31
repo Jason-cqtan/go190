@@ -8,6 +8,7 @@ func add(args ...int) int {
 	return sum
 }
 
+//对add函数调用正确的方式
 func main() {
 
 	add(1, 2)

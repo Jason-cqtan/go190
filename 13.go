@@ -8,12 +8,15 @@ import (
 
 func main() {
 	// 字符串拼接
-	str := "abc" + "123"
+	str := ""
+	str = "abc" + "123"
 	str = fmt.Sprintf("abc%d", 123)
 	str = strings.Join([]string{"123", "456"}, "")
 
 	var buffer bytes.Buffer
-	buffer.WriteString("12356")
+	for i := 0; i < 1000; i++ {
+		buffer.WriteString("a")
+	}
 	str = buffer.String()
 
 	fmt.Println(str)
